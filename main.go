@@ -90,7 +90,7 @@ func IsHTTPpacket(buf []byte) *http.Request{
 	return req
 }
 func main(){
-	l,err:=net.Listen("tcp",":8080")
+	l,err:=net.Listen("tcp","127.0.0.1:9070")
 	if err!=nil{
 		log.Println(err)
 		return
